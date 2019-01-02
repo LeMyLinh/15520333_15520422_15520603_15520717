@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00686EA8-AA02-487A-8273-09D49FD93977}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyDuLich</RootNamespace>
+    <AssemblyName>QuanLyDuLich</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ChiTietLichTrinh.cs" />
+    <Compile Include="BLL\DiemDuLich.cs" />
+    <Compile Include="BLL\DoiTac.cs" />
+    <Compile Include="BLL\GiamDoc.cs" />
+    <Compile Include="BLL\KhachHang.cs" />
+    <Compile Include="BLL\LichTrinh.cs" />
+    <Compile Include="BLL\LoaiNhanVien.cs" />
+    <Compile Include="BLL\NhanVien.cs" />
+    <Compile Include="BLL\NVDieuHanh.cs" />
+    <Compile Include="BLL\NVSale.cs" />
+    <Compile Include="BLL\PhongBan.cs" />
+    <Compile Include="BLL\Tour.cs" />
+    <Compile Include="DAL\Config.cs" />
+    <Compile Include="DAL\Connection.cs" />
+    <Compile Include="DAL\dalChiTietLichTrinh.cs" />
+    <Compile Include="DAL\dalDiemDuLich.cs" />
+    <Compile Include="DAL\dalDoiTac.cs" />
+    <Compile Include="DAL\dalKhachHang.cs" />
+    <Compile Include="DAL\dalLichTrinh.cs" />
+    <Compile Include="DAL\dalNhanVien.cs" />
+    <Compile Include="DAL\dalObject.cs" />
+    <Compile Include="DAL\dalPhongBan.cs" />
+    <Compile Include="DAL\dalTour.cs" />
+    <Compile Include="DiaDiemDuLich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiaDiemDuLich.Designer.cs">
+      <DependentUpon>DiaDiemDuLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\dtoChiTietLichTrinh.cs" />
+    <Compile Include="DTO\dtoDiemDuLich.cs" />
+    <Compile Include="DTO\dtoDoiTac.cs" />
+    <Compile Include="DTO\dtoKhachHang.cs" />
+    <Compile Include="DTO\dtoLichTrinh.cs" />
+    <Compile Include="DTO\dtoNhanVien.cs" />
+    <Compile Include="DTO\dtoPhongBan.cs" />
+    <Compile Include="DTO\dtoTour.cs" />
+    <Compile Include="GUI\ChiTietNode.cs" />
+    <Compile Include="GUI\Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\diagThemLichTrinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\diagThemLichTrinh.Designer.cs">
+      <DependentUpon>diagThemLichTrinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\diagChiTietLichTrinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\diagChiTietLichTrinh.Designer.cs">
+      <DependentUpon>diagChiTietLichTrinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DoiTacLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmGiamDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmGiamDoc.Designer.cs">
+      <DependentUpon>frmGiamDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNhanVienDieuHanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanVienDieuHanh.Designer.cs">
+      <DependentUpon>frmNhanVienDieuHanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNhanVienSaleTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanVienSaleTour.Designer.cs">
+      <DependentUpon>frmNhanVienSaleTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThemDoiTac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThemDoiTac.Designer.cs">
+      <DependentUpon>frmThemDoiTac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmXemChiTietTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmXemChiTietTour.Designer.cs">
+      <DependentUpon>frmXemChiTietTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LichTrinhNode.cs" />
+    <Compile Include="GUI\QuanLyTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RememberMe.cs" />
+    <Compile Include="GUI\SQLDateTime.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XemTour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XemTour.Designer.cs">
+      <DependentUpon>XemTour.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DiaDiemDuLich.resx">
+      <DependentUpon>DiaDiemDuLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\diagChiTietLichTrinh.resx">
+      <DependentUpon>diagChiTietLichTrinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\diagThemLichTrinh.resx">
+      <DependentUpon>diagThemLichTrinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmGiamDoc.resx">
+      <DependentUpon>frmGiamDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhanVienDieuHanh.resx">
+      <DependentUpon>frmNhanVienDieuHanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhanVienSaleTour.resx">
+      <DependentUpon>frmNhanVienSaleTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThemDoiTac.resx">
+      <DependentUpon>frmThemDoiTac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmXemChiTietTour.resx">
+      <DependentUpon>frmXemChiTietTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="XemTour.resx">
+      <DependentUpon>XemTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="cu.jpg" />
+    <Content Include="GUI\readme.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
