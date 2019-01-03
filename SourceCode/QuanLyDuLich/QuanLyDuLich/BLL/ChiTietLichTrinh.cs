@@ -54,7 +54,6 @@ namespace BLL
             set { doiTac = value; }
         }
 
-
         public ChiTietLichTrinh() { }
 
         public ChiTietLichTrinh(dtoChiTietLichTrinh dto)

@@ -253,7 +253,7 @@ namespace QuanLyDuLich.GUI
                 cb_GioiTinh.SelectedIndex = 0;            
             else
                 cb_GioiTinh.SelectedIndex = 1;
-            if (kh.LOAIKHACHHANG == "ĐOÀN")
+            if (kh.LOAIKHACHHANG == "DOAN")
                 cb_LoaiKhachHang.SelectedIndex = 0;
             else
                 cb_LoaiKhachHang.SelectedIndex = 1;

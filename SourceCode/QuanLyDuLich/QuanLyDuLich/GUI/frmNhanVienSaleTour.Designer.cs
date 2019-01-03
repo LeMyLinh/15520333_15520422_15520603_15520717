@@ -329,8 +329,8 @@
             this.cb_LoaiKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_LoaiKhachHang.FormattingEnabled = true;
             this.cb_LoaiKhachHang.Items.AddRange(new object[] {
-            "ĐOÀN",
-            "LẺ"});
+            "DOAN",
+            "LE"});
             this.cb_LoaiKhachHang.Location = new System.Drawing.Point(555, 100);
             this.cb_LoaiKhachHang.Name = "cb_LoaiKhachHang";
             this.cb_LoaiKhachHang.Size = new System.Drawing.Size(155, 28);
